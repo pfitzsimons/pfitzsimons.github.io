@@ -20,17 +20,6 @@ jQuery(document).ready(function($){
       });
     }
 
-    // alertbar later
-    $(document).scroll(function () {
-        var y = $(this).scrollTop();
-        if (y > 280) {
-            $('.alertbar').fadeIn();
-        } else {
-            $('.alertbar').fadeOut();
-        }
-    });
-
-
     // Smooth on external page
     $(function() {
       setTimeout(function() {
@@ -104,7 +93,7 @@ jQuery(document).ready(function($){
         lastScrollTop = st;
     }
         
-    $('.site-content').css('margin-top', $('header').outerHeight() + 'px');  
+    $('.site-content').css('margin-top', $('header').outerHeight() + 'px');
     
     // spoilers
      $(document).on('click', '.spoiler', function() {

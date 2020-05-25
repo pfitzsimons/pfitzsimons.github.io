@@ -7,7 +7,6 @@ title: Recipes
 ================================================== -->
 <section class="featured-posts">
     {% for post in site.posts %}
-
         {% if post.featured == true %}
             <div class="section-title">
                 <h2><span>Featured Recipes</span></h2>
@@ -18,13 +17,9 @@ title: Recipes
     <div class="row">
 
     {% for post in site.posts %}
-
         {% if post.featured == true %}
-
             {% include featuredbox.html %}
-
         {% endif %}
-
     {% endfor %}
 
     </div>

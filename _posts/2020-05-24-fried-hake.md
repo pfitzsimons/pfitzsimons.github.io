@@ -2,10 +2,14 @@
 layout: post
 title: "Pan Seared Hake"
 author: patrick
-categories: [ Jekyll, tutorial ]
+categories: [ Fish ]
 image: assets/images/seared-hake.jpg
 permalink: recipes/:title/
+featured: true
 ---
+Deliciously clean pan seared hake on a bed of garlic potatoes, served up with a poached egg, asparagus and bacon bits. 
+Fish sourced from [Mourne Sea Food](https://www.mourneseafood.com/seafoodshop/).
+
 <i><u>Ingredients</u></i>
 
 - [Hake Fillet (190g)](https://www.mourneseafood.com/product/hake-fillet-190g/)

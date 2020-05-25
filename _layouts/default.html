@@ -43,10 +43,9 @@ ga('send', 'pageview');
 
 <!-- Begin Menu Navigation
 ================================================== -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top mediumnavigation nav-down">
 
     <div class="container pr-0">
-
     <!-- Begin Logo -->
     <a class="navbar-brand" href="{{ site.baseurl }}/">
     <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
@@ -114,16 +113,17 @@ ga('send', 'pageview');
     {% endif %}
 </div>
 
-<!-- Content
-================================================== -->
-<div class="main-content">
-    {{ content }}
-</div>
-    
+    <!-- Content
+    ================================================== -->
+    <div class="main-content">
+        {{ content }}
+    </div>
+
 </div>
 
-<!-- Categories Jumbotron
-================================================== -->
+    <!-- Categories Jumbotron
+    ================================================== -->
+    {% if page.title != "Home" %}
 <div class="jumbotron fortags">
 	<div class="d-md-flex h-100">
 		<div class="col-md-4 transpdark align-self-center text-center h-100">
@@ -146,6 +146,7 @@ ga('send', 'pageview');
 		</div>
 	</div>
 </div>
+    {% endif %}
 
 <!-- Begin Footer
 ================================================== -->
@@ -153,10 +154,7 @@ ga('send', 'pageview');
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-6 text-center text-lg-left">
-                Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
-            </div>
-            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
-                <a target="_blank" href="https://www.wowthemes.net/mediumish-free-jekyll-template/">Mediumish Jekyll Theme</a> by WowThemes.net
+                Copyright © {{ site.time | date: "%Y" }} {{ site.name }}
             </div>
         </div>
     </div>
@@ -168,18 +166,12 @@ ga('send', 'pageview');
 
 <!-- Scripts
 ================================================== -->
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
 <script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
-
 {% if site.lazyimages == "enabled" %}
 <script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
 {% endif %}
-
 <script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
-
 </body>
 </html>
